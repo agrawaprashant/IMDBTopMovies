@@ -1,0 +1,31 @@
+<div class="movie-card">
+  <h3>{{ movie.movie_title }}</h3>
+  <div class="director">
+    <p>By</p>
+    <p>{{ movie.director_name }}</p>
+  </div>
+
+  <div class="cast">
+    <label>Cast</label>
+    <ul>
+      <li>{{ movie.actor_1_name }}</li>
+      <li>{{ movie.actor_2_name }}</li>
+    </ul>
+  </div>
+
+  <div class="genre">
+    <label>Genre</label>
+    <p>{{ movie.genres }}</p>
+  </div>
+
+  <div class="keywords">
+    <label>Keywords</label>
+    <p>{{ movie.plot_keywords }}</p>
+  </div>
+
+  <div class="movie-card-footer">
+    <p>{{ movie.language }}</p>
+    <p>{{ movie.title_year }}</p>
+    <a [href]="movie.movie_imdb_link"><i class="fab fa-imdb fa-2x"></i></a>
+  </div>
+</div>
